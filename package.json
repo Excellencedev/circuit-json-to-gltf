@@ -7,9 +7,9 @@
     "test": "bun test tests/",
     "format": "biome format --write .",
     "format:check": "biome format .",
-    "build:site": "cosmos-export",
-    "start": "cosmos",
-    "build": "tsup-node lib/index.ts --format esm --dts --outDir dist"
+    "build:site": "node init && cosmos-export",
+    "start": "node init && cosmos",
+    "build": "node init && tsup-node lib/index.ts --format esm --dts --outDir dist"
   },
   "files": [
     "dist"
@@ -53,6 +53,8 @@
   "dependencies": {
     "@gltf-transform/core": "^4.2.1",
     "@gltf-transform/extensions": "^4.2.1",
-    "@gltf-transform/functions": "^4.2.1"
+    "@gltf-transform/functions": "^4.2.1",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2"
   }
 }

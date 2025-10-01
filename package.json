@@ -53,6 +53,8 @@
   "dependencies": {
     "@gltf-transform/core": "^4.2.1",
     "@gltf-transform/extensions": "^4.2.1",
-    "@gltf-transform/functions": "^4.2.1"
+    "@gltf-transform/functions": "^4.2.1",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2"
   }
 }

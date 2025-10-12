@@ -15,7 +15,9 @@
     "dist"
   ],
   "dependencies": {
-    "@jscad/modeling": "^2.12.6"
+    "@jscad/modeling": "^2.12.6",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.1.4",

@@ -16,8 +16,10 @@
   ],
   "dependencies": {
     "@jscad/modeling": "^2.12.6",
+    "dotenv": "^8.2.0",
     "jscad-electronics": "^0.0.53",
-    "jscad-to-gltf": "^0.0.5"
+    "jscad-to-gltf": "^0.0.5",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.1.4",

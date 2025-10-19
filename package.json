@@ -7,17 +7,19 @@
     "test": "bun test tests/",
     "format": "biome format --write .",
     "format:check": "biome format .",
-    "build:site": "cosmos-export",
-    "start": "cosmos",
-    "build": "tsup-node"
+    "build:site": "node init && cosmos-export",
+    "start": "node init && cosmos",
+    "build": "node init && tsup-node"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
     "@jscad/modeling": "^2.12.6",
+    "dotenv": "^8.2.0",
     "jscad-electronics": "^0.0.53",
-    "jscad-to-gltf": "^0.0.5"
+    "jscad-to-gltf": "^0.0.5",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.1.4",
